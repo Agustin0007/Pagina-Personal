@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Portafolios" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agustin Patat</title>
+    <link rel="icon" href="../Public/Img/Logo pagina.png" type="image/png">
+
+    <link rel="stylesheet" href="css/Navigation menu.css">
+    <link rel="stylesheet" href="css/About me.css">
+    <link rel="stylesheet" href="css/Resposive.css">
+
+    <script src="Scripts/Script-Navigation menu.js"></script>
+
+</head>
+<body>
+   <!--SECCION NAVIGATION MENU -->
+   <section class="contenedor-header">
+    <header>
+        <nav id="nav" class="responsive">
+            <ul>
+                <li><a href="Section Start.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="Section About me.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="Section Skills.html" onclick="seleccionar()">HABILIDADES</a></li>
+                <li><a href="Section Portafolio.html" onclick="seleccionar()">PORTAFOLIO</a></li>
+                <li><a href="Section Contact.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!--<div id="content">
+            <p id="paragraph1"></p>
+            <p id="paragraph2"></p>
+            <label class="switch">
+                <input type="checkbox" id="toggle-btn">
+                <span class="slider round"></span>
+            </label>
+        </div>-->
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </div>
+    </header>
+</section>
+    <!--SECCION ABOUT ME-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="imagen-col">
+                    <img class="imagen-perfil" src="Img/Fondo Imagen.jpg" alt="">
+                </div> 
+                <div class="col info-col">
+                    <h2>Sobre Mi</h2>
+                    <p>Mi nombre es Agustín Patat, estudiante de Ingeniería en Sistemas de Información, y estoy entusiasmado por la oportunidad de integrarme a un equipo laboral donde pueda contribuir con mis habilidades y seguir desarrollándome profesionalmente.
+                        Soy una persona responsable, puntual y con gran capacidad de aprendizaje. Me adapto rápidamente a los entornos laborales y disfruto trabajando en equipo, aportando ideas innovadoras y tomando decisiones que impulsen el crecimiento de los proyectos en los que participo.
+                        Poseo conocimientos y habilidades en análisis de datos y desarrollo FrontEnd. Además, me caracteriza mi creatividad para resolver problemas y mi enfoque analítico y metódico.
+                        Estoy convencido de que mis habilidades técnicas y mi actitud positiva pueden generar un impacto positivo en su organización. Espero con interés la posibilidad de contribuir al éxito de su equipo y crecer junto a ustedes.
+                    </p>
+                    <div class="fila">
+                        <!--Datos Personales-->
+                        <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                <li>
+                                    <strong>Cumpleaños:</strong>
+                                    16-02-2004
+                                </li>
+                                <li>
+                                    <strong>Telefono:</strong>
+                                    3564 360908
+                                </li>
+                                <li>
+                                    <strong>Email:</strong>
+                                    agustinpatat5@gmail.com
+                                </li>
+                                <li>
+                                    <strong>Direccion:</strong>
+                                    San Francisco, Cordoba, Argentina
+                                </li>
+                                <li>
+                                    <strong>Cargo:</strong>
+                                    <span>Analista de Datos - Estudiante</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="No-Link">
+                        <a href="Agustin_Patat_CV.pdf">Descargar CV <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>FORMACION</h3>
+                    <div class="item izq">
+                        <h4>Técnico Electricista</h4>
+                        <span class="casa">IPET N°50 Ing. F. Olmos, San Francisco</span>
+                        <span class="fecha">2016 - 2022</span>
+                        <p>Promedio general de calificaciones: 8.35</p>
+                        <p>Estudios de Secundaria finalizados</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing. Sistemas de Información | Sistemas de información </h4>
+                        <span class="casa">UTN, San Francisco</span>
+                        <span class="fecha">2023 - hasta la fecha actual</span>
+                        <p>Soy estudiante de la carreara Ing. Sistemas de Información en la facultad UTN San Francisco. 
+                            En este 2025 comienzo mi tercer año en la carrera con 16 materias aprobadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>HISTORIAL LABORAL</h3>
+                    <div class="item der">
+                        <h4>Técnico de mantenimiento preventivo y predictivo</h4>
+                        <span class="casa">Akron S.A | San Francisco</span>
+                        <span class="fecha">Septiembre 2022 - Diciembre 2022</span>
+                        <p>En la firma Akron S.A, donde he desarrollado las pasantías cumpliendo funciones de 
+                            mantenimiento bajo la supervisión del encargado Matias Chiappero T.E: 3564 213652</p>
+                        <p>Mantenimiento preventivo y correctivo de instalaciones, equipamiento eléctrico y mecánico</p>
+                        <p>Apoyo para la instalación y el montaje de equipos y maquinaria.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Electricista</h4>
+                        <span class="casa">IPET N°50 EFO | San Francisco</span>
+                        <span class="fecha">Marzo 2016 - Diciembre 2022</span>
+                        <p>Me avala mi experiencia técnica forjada en el taller del establecimiento educativo IPET N°50 EFO, 
+                            en la que el (o los maestros) Andreatta Pedro T.E: 3564 650085 pueden dar testimonio de la misma..</p>
+                        <p>Inspección de sistemas, equipos y componentes eléctricos para detectar riesgos y proponer mejoras.
+                        <p> Verificación de la compatibilidad y seguridad de los sistemas</p>
+                        <p>Interpretación técnica para la correcta instalación de sistemas y equipos eléctricos y de conexiones.</p>
+                        <p>Estudio de los diagramas de circuito para establecer una óptima distribución del cableado.</p>
+                        <p>Lectura y seguimiento de planos y manuales técnicos</p>
+                        <p>Manejo de sistemas informáticos y tecnológicos.</p>
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

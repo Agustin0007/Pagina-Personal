@@ -1,0 +1,251 @@
+/*PORTAFOLIO*/
+.portafolio {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 100px 20px;
+    height: 100vh;  
+}
+.portafolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    animation: slideIn 1s ease-in-out forwards; /* Añadido 'forwards' para mantener la posición final */
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); } /* Ajusta la posición inicial */
+    to { transform: translateX(0%); } /* Ajusta la posición final */
+}
+.portafolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portafolio .galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.portafolio .galeria .proyecto {
+    width: 100%;
+    margin: 20px 0;
+}
+.portafolio .galeria .proyecto .descripcion {
+    background-color: rgb(37, 35, 35);
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+.portafolio .galeria .proyecto .descripcion h3 {
+    font-size: 24px;
+    font-family: 'Righteous';
+}
+.portafolio .galeria .proyecto .descripcion p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.portafolio .galeria .proyecto .descripcion ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.portafolio .galeria .proyecto .imagen-container {
+    position: relative;
+    max-width: 340px;
+    margin: 20px 0;
+}
+.portafolio .galeria .proyecto .imagen-container img {
+    width: 100%;
+    height: 210px;
+    display: block; /* Asegura que no haya espacio extra */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    border: 10px ridge #001aff; /* Mueve el borde aquí */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */ 
+}
+.portafolio .galeria .proyecto .imagen-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(133, 121, 238), rgb(28, 41, 233));
+    color: white; /* Cambia el color del texto a blanco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    pointer-events: none;
+    z-index: 1;
+}
+.portafolio .galeria .proyecto .imagen-container:hover .overlay {
+    opacity: 1;
+}
+.portafolio .galeria .proyecto .imagen-container .overlay h3 {
+    margin-bottom: 20px;
+    transition: margin-bottom 1s;
+}
+.portafolio .galeria .proyecto .imagen-container:hover .overlay h3 {
+    margin-bottom: 0px;
+}
+.portafolio .boton-descripcion {
+    text-decoration: none; /* Quita cualquier subrayado */
+    cursor: pointer;
+    background-color: #000; /* Fondo negro inicial */
+    border: 2px solid rgb(0, 17, 255);
+    width: fit-content;
+    display: block;
+    padding: 10px 22px;
+    font-size: 18px; /* Aumenta ligeramente el tamaño */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de fuente */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #ffffff; /* Cambia el color del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    overflow: hidden; /* Asegura que la superposición no se salga del botón */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Añade una transición para el color de fondo y del texto */
+}
+
+.portafolio .boton-descripcion .overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.portafolio .boton-descripcion:hover {
+    color: #ffffff;
+    background-color: #1100ff;
+    box-shadow: 0 0 10px #1100ff;
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    transition: transform 0.3s ease;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    width: 70%;
+    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    z-index: 1000;
+}
+.closeModal {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.closeModal:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive styles for Portfolio section */
+@media screen and (max-width: 1024px) {
+    .portafolio {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .portafolio .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portafolio .galeria .proyecto {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portafolio h2 {
+        font-size: 36px;
+    }
+
+    .portafolio .galeria .proyecto .descripcion h3 {
+        font-size: 20px;
+    }
+
+    .portafolio .galeria .proyecto .descripcion p {
+        font-size: 16px;
+    }
+
+    .modal {
+        width: 90%;
+        height: 90%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portafolio h2 {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+
+    .portafolio .galeria .proyecto {
+        width: 100%;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container {
+        max-width: 280px;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container img {
+        height: 180px;
+    }
+
+    .portafolio .boton-descripcion {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    .modal {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .closeModal {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .portafolio .galeria .proyecto .imagen-container {
+        max-width: 240px;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container img {
+        height: 150px;
+    }
+
+    .portafolio .boton-descripcion {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}

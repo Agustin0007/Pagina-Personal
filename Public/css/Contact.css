@@ -1,0 +1,297 @@
+/*CONTACTO*/
+.Contacto {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    animation: backgroundShift 10s infinite;
+}
+
+.contenido-seccion {
+    height: auto;
+    background-size: cover;
+    color: white;
+    width: 60%;
+    animation: slideIn 1s ease-in-out forwards;
+    position: relative;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(-25%); }
+}
+
+.formulario {
+    width: 70%;
+    padding: 4%;
+    box-shadow: 0 0px 20px rgba(17, 0, 255, 0.527);
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.formulario .center-texto {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    animation: textFade 3s infinite;
+}
+
+@keyframes textFade {
+    0% { color: #ffffff; }
+    50% { color: #b3b3b3; }
+    100% { color: #ffffff; }
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.campo_field {
+    flex: 1;
+    border: 2px solid #0004ff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.campo_field--textarea {
+    height: 100px;
+}
+
+.campo_field:focus {
+    border-color: #0400ff;
+}
+
+.campo_label {
+    flex: 0 0 100px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton_primario {
+    background-color: #07006e;
+    color: white;
+    font-size: 15px;
+    margin-left: 110px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton_primario:hover {
+    background-color: #0400ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 4, 255, 0.5);
+}
+
+.mapa-sudamerica {
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%; 
+    animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+    from { right: 10%; }
+    to { right: -40%; }
+}
+/*FOOTER*/
+footer {
+    background-color: rgb(0,0,0);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes {
+    margin-bottom: 20px;
+    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+    justify-content: left; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los íconos */
+    padding-left: 300px;
+}
+footer .redes a {
+    color: #fff;
+    display: flex; /* Flex para centrar los iconos */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ffffff; /* Fondo oscuro para los círculos */
+    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    width: 60px; /* Tamaño del círculo */
+    height: 60px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+footer .redes a svg {
+    width: 80%; /* Ocupa el 80% del círculo */
+    height: 80%; /* Ocupa el 80% del círculo */
+}
+footer .redes a:hover {
+    transform: scale(1.1); /* Efecto de agrandar el círculo al pasar el ratón */
+    background-color: rgb(255, 255, 255); /* Cambia el fondo al pasar el ratón */
+    color: #fff;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(248, 248, 248);
+}
+/* Responsive styles for Contact section */
+@media screen and (max-width: 1024px) {
+    .contenido-seccion {
+        width: 80%;
+    }
+
+    .formulario {
+        width: 80%;
+    }
+
+    .mapa-sudamerica {
+        right: -35%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Contacto {
+        padding-top: 50px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .contenido-seccion {
+        width: 90%;
+        animation: none;
+        transform: translateX(0);
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .campo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .campo_label {
+        flex: none;
+        margin-bottom: 5px;
+    }
+
+    .boton_primario {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .mapa-sudamerica {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-top: 20px;
+        animation: none;
+    }
+
+    .formulario .center-texto {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Contacto {
+        padding: 30px 15px;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .campo_field {
+        padding: 8px;
+    }
+
+    .campo_field--textarea {
+        height: 80px;
+    }
+
+    .formulario .center-texto {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    footer .redes {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    footer .redes a {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formulario .center-texto {
+        font-size: 20px;
+    }
+
+    .campo_field {
+        font-size: 14px;
+    }
+
+    .boton_primario {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* ... other styles ... */
+
+    .boton_primario {
+        margin-left: 0;
+        width: auto;
+        min-width: 120px;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ... other styles ... */
+
+    .boton_primario {
+        font-size: 15px;
+        padding: 10px 25px;
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* ... other styles ... */
+
+    .boton_primario {
+        font-size: 15px;
+        padding: 10px 25px;
+        min-width: 100px;
+    }
+}

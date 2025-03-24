@@ -1,0 +1,330 @@
+/*ABOUT ME*/
+.sobremi {
+    background-color: rgb(0,0,0);
+    color: white;
+    padding: 70px 20px;
+}
+.sobremi .contenido-seccion {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    padding: 20px;
+    border: 3px solid blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-in-out forwards; /* Añadido 'forwards' para mantener la posición final */
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); } /* Ajusta la posición inicial */
+    to { transform: translateX(0%); } /* Ajusta la posición final */
+}
+.contenido-seccion:hover {
+    box-shadow: 0 10px 25px rgba(4, 0, 255, 0.5);
+}
+.sobremi .fila {
+    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.sobremi .imagen-col {
+    padding-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 450%;
+}
+.sobremi .imagen-perfil {
+    width: 100%; /* Cambia el ancho de la imagen a 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: 10px ridge rgb(4, 0, 255);
+    border-radius: 50px;
+    display: block;
+}
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: left; /* Alinea el título a la izquierda */
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+.sobremi .fila .col ul{
+    list-style: none;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: blue;
+    padding: 3px;
+    border-radius: 5px;
+}
+.sobremi button {
+    text-decoration: none; /* Quita cualquier subrayado */
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 18px; /* Aumenta ligeramente el tamaño */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de fuente */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #ffffff; /* Cambia el color del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    overflow: hidden; /* Asegura que la superposición no se salga del botón */
+}
+
+.sobremi button .overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1100ff; /* Cambia a un azul más vibrante */
+    z-index: -1;
+    transition: width 1s; /* Asegura que solo la propiedad 'width' tenga la transición */
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+.sobremi button a {
+    text-decoration: none; /* Quita cualquier subrayado */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+/*CURRICULUM*/
+.curriculum{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 100px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1500px;
+    margin: 0;
+    animation: slideIn 1s ease-in-out forwards; /* Añadido 'forwards' para mantener la posición final */
+    border: 3px solid blue;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.curriculum .contenido-seccion:hover{
+    box-shadow: 0 0 20px blue;
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); } /* Ajusta la posición inicial */
+    to { transform: translateX(0%); } /* Ajusta la posición final */
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+}
+.curriculum .fila .col{
+    width: 70%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid rgb(32, 32, 32);
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgb(44, 44, 44);
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid blue;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid blue;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: blue;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: blue;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sobremi .fila {
+        flex-direction: column;
+    }
+
+    .sobremi .imagen-col {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobremi .imagen-perfil {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .sobremi h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .sobremi .contenido-seccion {
+        padding: 15px;
+    }
+
+    .sobremi .fila .col h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .sobremi .fila .col ul li {
+        white-space: normal;
+    }
+}
+
+/* Curriculum section responsive */
+@media screen and (max-width: 768px) {
+    .curriculum .fila {
+        flex-direction: column;
+    }
+
+    .curriculum .fila .col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .curriculum .fila .izquierda {
+        border-right: none;
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+    }
+
+    .curriculum h2 {
+        font-size: 36px;
+    }
+
+    .curriculum .fila .item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .curriculum .fila .item .conectori,
+    .curriculum .fila .item .conectord {
+        display: none;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .sobremi h2 {
+        font-size: 28px;
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .sobremi .fila .col h3 {
+        font-size: 20px;
+    }
+
+    .sobremi button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .curriculum h2 {
+        font-size: 28px;
+    }
+
+    .curriculum .fila .item h4 {
+        font-size: 18px;
+    }
+
+    .curriculum .fila .item .casa {
+        font-size: 18px;
+    }
+}

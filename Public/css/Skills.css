@@ -1,0 +1,272 @@
+/* HABILIDADES */
+.skills {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 100px 20px;
+    background-attachment: fixed;
+}
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila {
+    display: flex;
+}
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill {
+    height: 20px; /* Aumentado el tamaño de la barra */
+    width: 80%;
+    background-color: rgba(30, 35, 38, .8);
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+}
+.skills .skill .progreso {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Aumentado el tamaño de la barra */
+    border-radius: 6px;
+    animation: slideInBar 1s ease-out forwards;
+}
+@keyframes slideInBar {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color:blue;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -10px; /* Ajustado para que se vea completo */
+    right: -15px;
+    font-size: 14px;
+    color: white;
+    animation: bounce 1s infinite;
+}
+
+.skills .skill .SQL {
+    width: 0%;
+    animation: 2s SQL forwards;
+}
+@keyframes SQL {
+    0% { width: 0%; }
+    100% { width: 65%; }
+}
+.skills .skill .Python {
+    width: 0%;
+    animation: 2s Python forwards;
+}
+@keyframes Python {
+    0% { width: 0%; }
+    100% { width: 40%; }
+}
+.skills .skill .Power_BI {
+    width: 0%;
+    animation: 2s Power_BI forwards;
+}
+@keyframes Power_BI {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+.skills .skill .C {
+    width: 0%;
+    animation: 2s C forwards;
+}
+@keyframes C {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+.skills .skill .Microsoft_Excel {
+    width: 0%;
+    animation: 2s Microsoft_Excel forwards;
+}
+@keyframes Microsoft_Excel {
+    0% { width: 0%; }
+    100% { width: 40%; }
+}
+.skills .skill .Microsoft_Word {
+    width: 0%;
+    animation: 2s Microsoft_Word forwards;
+}
+@keyframes Microsoft_Word {
+    0% { width: 0%; }
+    100% { width: 40%; }
+}
+.skills .skill .HTML5 {
+    width: 0%;
+    animation: 2s HTML5 forwards;
+}
+@keyframes HTML5 {
+    0% { width: 0%; }
+    100% { width: 55%; }
+}
+.skills .skill .CSS3 {
+    width: 0%;
+    animation: 2s CSS3 forwards;
+}
+@keyframes CSS3 {
+    0% { width: 0%; }
+    100% { width: 55%; }
+}
+.skills .skill .Comunicacion {
+    width: 0%;
+    animation: 2s Comunicacion forwards;
+}
+@keyframes Comunicacion {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+.skills .skill .Responsabilidad {
+    width: 0%;
+    animation: 2s Responsabilidad forwards;
+}
+@keyframes Responsabilidad {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+.skills .skill .Resolución_de_problemas {
+    width: 0%;
+    animation: 2s Resolución_de_problemas forwards;
+}
+@keyframes Resolución_de_problemas {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+.skills .skill .Organización {
+    width: 0%;
+    animation: 2s Organización forwards;
+}
+@keyframes Organización {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+.skills .skill .Adaptabilidad {
+    width: 0%;
+    animation: 2s Adaptabilidad forwards;
+}
+@keyframes Adaptabilidad {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+.skills .skill .Trabajo_en_equipo {
+    width: 0%;
+    animation: 2s Trabajo_en_equipo forwards;
+}
+@keyframes Trabajo_en_equipo {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+.skills .skill .Toma_de_desiciones {
+    width: 0%;
+    animation: 2s Toma_de_desiciones forwards;
+}
+@keyframes Toma_de_desiciones {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+.skills .skill .Creatividad {
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+@keyframes Creatividad {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+.skills .skill .Dedicacion {
+    width: 0%;
+    animation: 2s Dedicacion forwards;
+}
+@keyframes Dedicacion {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.skills .skill:nth-child(1) .barra-skill {
+    animation: fadeIn 0.5s 0s forwards, slideInBar 1s 0s forwards;
+}
+.skills .skill:nth-child(2) .barra-skill {
+    animation: fadeIn 0.5s 1s forwards, slideInBar 1s 1s forwards;
+}
+.skills .skill:nth-child(3) .barra-skill {
+    animation: fadeIn 0.5s 2s forwards, slideInBar 1s 2s forwards;
+}
+.skills .skill:nth-child(4) .barra-skill {
+    animation: fadeIn 0.5s 3s forwards, slideInBar 1s 3s forwards;
+}
+.skills .skill:nth-child(5) .barra-skill {
+    animation: fadeIn 0.5s 4s forwards, slideInBar 1s 4s forwards;
+}
+.skills .skill:nth-child(6) .barra-skill {
+    animation: fadeIn 0.5s 5s forwards, slideInBar 1s 5s forwards;
+}
+.skills .skill:nth-child(7) .barra-skill {
+    animation: fadeIn 0.5s 6s forwards, slideInBar 1s 6s forwards;
+}
+.skills .skill:nth-child(8) .barra-skill {
+    animation: fadeIn 0.5s 7s forwards, slideInBar 1s 7s forwards;
+}
+.skills .skill:nth-child(9) .barra-skill {
+    animation: fadeIn 0.5s 8s forwards, slideInBar 1s 8s forwards;
+}
+.skills .skill:nth-child(10) .barra-skill {
+    animation: fadeIn 0.5s 9s forwards, slideInBar 1s 9s forwards;
+}
+.skills .skill:nth-child(11) .barra-skill {
+    animation: fadeIn 0.5s 10s forwards, slideInBar 1s 10s forwards;
+}
+.skills .skill:nth-child(12) .barra-skill {
+    animation: fadeIn 0.5s 11s forwards, slideInBar 1s 11s forwards;
+}
+.skills .skill:nth-child(13) .barra-skill {
+    animation: fadeIn 0.5s 12s forwards, slideInBar 1s 12s forwards;
+}
+.skills .skill:nth-child(14) .barra-skill {
+    animation: fadeIn 0.5s 13s forwards, slideInBar 1s 13s forwards;
+}
+.skills .skill:nth-child(15) .barra-skill {
+    animation: fadeIn 0.5s 14s forwards, slideInBar 1s 14s forwards;
+}
+.skills .skill:nth-child(16) .barra-skill {
+    animation: fadeIn 0.5s 15s forwards, slideInBar 1s 15s forwards;
+}
+.skills .skill:nth-child(17) .barra-skill {
+    animation: fadeIn 0.5s 16s forwards, slideInBar 1s 16s forwards;
+}
+.skills .skill:nth-child(18) .barra-skill {
+    animation: fadeIn 0.5s 17s forwards, slideInBar 1s 17s forwards;
+}
+.skills .skill:nth-child(19) .barra-skill {
+    animation: fadeIn 0.5s 18s forwards, slideInBar 1s 18s forwards;
+}
+.skills .skill:nth-child(20) .barra-skill {
+    animation: fadeIn 0.5s 19s forwards, slideInBar 1s 19s forwards;
+}

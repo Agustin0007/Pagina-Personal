@@ -1,0 +1,108 @@
+{
+    "es": {
+        "header": {
+            "home": "Inicio",
+            "about-me": "Sobre mí",
+            "skills": "Habilidades",
+            "curriculum": "Currículum",
+            "portfolio": "Portafolio"
+        },
+        "home": {
+            "name": "Agustin Patat",
+            "role": "Analista de Datos",
+            "email": "agustinpatat5@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/agustin-patat"
+        },
+        "about-me": {
+            "title": "Sobre mí",
+            "description": "Mi nombre es Agustín Patat, estudiante de Ingeniería en Sistemas de Información, y estoy entusiasmado por la oportunidad de integrarme a un equipo laboral donde pueda contribuir con mis habilidades y seguir desarrollándome profesionalmente. Soy una persona responsable, puntual y con gran capacidad de aprendizaje. Me adapto rápidamente a los entornos laborales y disfruto trabajando en equipo, aportando ideas innovadoras y tomando decisiones que impulsen el crecimiento de los proyectos en los que participo. Poseo conocimientos y habilidades en análisis de datos y desarrollo FrontEnd. Además, me caracteriza mi creatividad para resolver problemas y mi enfoque analítico y metódico. Estoy convencido de que mis habilidades técnicas y mi actitud positiva pueden generar un impacto positivo en su organización."
+        },
+        "personal-data": {
+            "birthday": "16-02-2004",
+            "phone": "3564 360908",
+            "email": "agustinpatat5@gmail.com",
+            "address": "San Francisco, Córdoba, Argentina",
+            "position": "Analista de Datos - Estudiante"
+        },
+        "skills": {
+            "technical": {
+                "SQL": "65%",
+                "Python": "40%",
+                "Power BI": "70%",
+                "C": "80%",
+                "Microsoft Excel": "30%",
+                "Microsoft Word": "40%",
+                "HTML5": "40%",
+                "CSS3": "40%"
+            },
+            "professional": {
+                "Comunicacion": "80%",
+                "Responsabilidad": "100%",
+                "Resolucion de problemas": "80%",
+                "Organizacion": "100%",
+                "Adaptabilidad": "90%",
+                "Trabajo en equipo": "90%",
+                "Toma de decisiones": "95%",
+                "Creatividad": "85%",
+                "Dedicacion": "100%"
+            }
+        },
+        "curriculum": {
+            "education": [
+                {
+                    "title": "Técnico Electricista",
+                    "institution": "IPET N°50 Ing. F. Olmos, San Francisco",
+                    "year": "2016 - 2022",
+                    "description": "Promedio general de calificaciones: 8.35. Estudios de Secundaria finalizados."
+                },
+                {
+                    "title": "Ing. Sistemas de Información",
+                    "institution": "UTN, San Francisco",
+                    "year": "2023 - Actualidad",
+                    "description": "En este 2025 comienzo mi tercer año en la carrera con 16 materias aprobadas."
+                }
+            ],
+            "experience": [
+                {
+                    "title": "Técnico de mantenimiento preventivo y predictivo",
+                    "company": "Akron S.A",
+                    "year": "Septiembre 2022 - Diciembre 2022",
+                    "tasks": [
+                        "Mantenimiento preventivo y correctivo de instalaciones, equipamiento eléctrico y mecánico",
+                        "Apoyo para la instalación y el montaje de equipos y maquinaria."
+                    ]
+                },
+                {
+                    "title": "Electricista",
+                    "company": "IPET N°50 EFO",
+                    "year": "Marzo 2016 - Diciembre 2022",
+                    "tasks": [
+                        "Inspección de sistemas, equipos y componentes eléctricos para detectar riesgos y proponer mejoras.",
+                        "Verificación de la compatibilidad y seguridad de los sistemas.",
+                        "Interpretación técnica para la correcta instalación de sistemas y equipos eléctricos y de conexiones.",
+                        "Estudio de los diagramas de circuito para establecer una óptima distribución del cableado.",
+                        "Lectura y seguimiento de planos y manuales técnicos.",
+                        "Manejo de sistemas informáticos y tecnológicos."
+                    ]
+                }
+            ]
+        },
+        "portfolio": [
+            {
+                "title": "HTML5 y CSS3",
+                "description": "Este proyecto es una página web avanzada desarrollada con HTML5 y CSS3. Incluye animaciones y transiciones CSS3 para mejorar la experiencia del usuario. Se implementaron técnicas de diseño responsivo y se utilizaron flexbox y grid layout para una disposición flexible y estructurada de los elementos en la página.",
+                "link": "https://6601cdf27cfe6031f2b17b33--scintillating-cucurucho-42440f.netlify.app/"
+            },
+            {
+                "title": "HTML5 y CSS3 - Página de equipo",
+                "description": "Este proyecto es una página web de equipo creada con HTML5 y CSS3. La página incluye una sección de 'Nosotros' que presenta a los miembros del equipo con fotos y descripciones. Se utilizaron técnicas de diseño responsivo para asegurar que la página se vea bien en dispositivos móviles y de escritorio, y se aplicaron estilos CSS3 para un diseño limpio y profesional.",
+                "link": "https://678688e7f96504816ee40e22--chic-puppy-e9e051.netlify.app/nosotros"
+            },
+            {
+                "title": "Análisis en Power BI",
+                "description": "Este informe presenta un análisis en Power BI sobre la distribución de empleados en una organización, diferenciando entre activos e inactivos. Se utilizan datos de un archivo Excel y diversas visualizaciones para facilitar la interpretación de la información. Se calculan métricas principales como total de empleados, empleados activos e inactivos, y se emplean medidas en DAX con filtros interactivos y mapas de distribución geográfica.",
+                "link": "https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9"
+            }
+        ]
+    }
+}

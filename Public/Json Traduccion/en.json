@@ -1,0 +1,108 @@
+{
+    "en": {
+        "header": {
+            "home": "Home",
+            "about-me": "About Me",
+            "skills": "Skills",
+            "curriculum": "Curriculum",
+            "portfolio": "Portfolio"
+        },
+        "home": {
+            "name": "Agustin Patat",
+            "role": "Data Analyst",
+            "email": "agustinpatat5@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/agustin-patat"
+        },
+        "about-me": {
+            "title": "About Me",
+            "description": "My name is Agustín Patat, I am a student of Information Systems Engineering, and I am excited about the opportunity to join a work team where I can contribute my skills and continue developing professionally. I am a responsible, punctual person with a great capacity for learning. I quickly adapt to work environments and enjoy working in teams, contributing innovative ideas, and making decisions that drive project growth. I have knowledge and skills in data analysis and FrontEnd development. Additionally, I am characterized by my creativity in problem-solving and my analytical and methodical approach. I am convinced that my technical skills and positive attitude can generate a positive impact on your organization."
+        },
+        "personal-data": {
+            "birthday": "16-02-2004",
+            "phone": "3564 360908",
+            "email": "agustinpatat5@gmail.com",
+            "address": "San Francisco, Córdoba, Argentina",
+            "position": "Data Analyst - Student"
+        },
+        "skills": {
+            "technical": {
+                "SQL": "65%",
+                "Python": "40%",
+                "Power BI": "70%",
+                "C": "80%",
+                "Microsoft Excel": "30%",
+                "Microsoft Word": "40%",
+                "HTML5": "40%",
+                "CSS3": "40%"
+            },
+            "professional": {
+                "Communication": "80%",
+                "Responsibility": "100%",
+                "Problem Solving": "80%",
+                "Organization": "100%",
+                "Adaptability": "90%",
+                "Teamwork": "90%",
+                "Decision Making": "95%",
+                "Creativity": "85%",
+                "Dedication": "100%"
+            }
+        },
+        "curriculum": {
+            "education": [
+                {
+                    "title": "Electrician Technician",
+                    "institution": "IPET N°50 Ing. F. Olmos, San Francisco",
+                    "year": "2016 - 2022",
+                    "description": "General grade average: 8.35. High school studies completed."
+                },
+                {
+                    "title": "Information Systems Engineering",
+                    "institution": "UTN, San Francisco",
+                    "year": "2023 - Present",
+                    "description": "In 2025, I will start my third year in the degree program with 16 subjects approved."
+                }
+            ],
+            "experience": [
+                {
+                    "title": "Preventive and Predictive Maintenance Technician",
+                    "company": "Akron S.A",
+                    "year": "September 2022 - December 2022",
+                    "tasks": [
+                        "Preventive and corrective maintenance of installations, electrical and mechanical equipment.",
+                        "Support for the installation and assembly of equipment and machinery."
+                    ]
+                },
+                {
+                    "title": "Electrician",
+                    "company": "IPET N°50 EFO",
+                    "year": "March 2016 - December 2022",
+                    "tasks": [
+                        "Inspection of electrical systems, equipment, and components to detect risks and propose improvements.",
+                        "Verification of system compatibility and safety.",
+                        "Technical interpretation for proper installation of electrical systems and connections.",
+                        "Study of circuit diagrams to establish an optimal wiring distribution.",
+                        "Reading and following technical blueprints and manuals.",
+                        "Handling of computer and technological systems."
+                    ]
+                }
+            ]
+        },
+        "portfolio": [
+            {
+                "title": "HTML5 and CSS3",
+                "description": "This project is an advanced website developed with HTML5 and CSS3. It includes CSS3 animations and transitions to enhance user experience. Responsive design techniques were implemented, and flexbox and grid layout were used for a flexible and structured arrangement of elements on the page.",
+                "link": "https://6601cdf27cfe6031f2b17b33--scintillating-cucurucho-42440f.netlify.app/"
+            },
+            {
+                "title": "HTML5 and CSS3 - Team Page",
+                "description": "This project is a team website created with HTML5 and CSS3. The page includes a 'About Us' section that presents team members with photos and descriptions. Responsive design techniques were used to ensure the page looks good on mobile and desktop devices, and CSS3 styles were applied for a clean and professional design.",
+                "link": "https://678688e7f96504816ee40e22--chic-puppy-e9e051.netlify.app/nosotros"
+            },
+            {
+                "title": "Power BI Analysis Report",
+                "description": "This report presents an analysis in Power BI on the distribution of employees in an organization, distinguishing between active and inactive employees. Data from an Excel file is used, and various visualizations are implemented to facilitate information interpretation. Key metrics such as total employees, active employees, and inactive employees are calculated. Measures in DAX, interactive filters, and geographic distribution maps are employed.",
+                "link": "https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9"
+            }
+        ]
+    }
+}

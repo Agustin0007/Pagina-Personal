@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+html{
+    /*Me permite deslizar cuando hago clicks en los links del menu*/
+    scroll-behavior: smooth;
+}
+h2{
+    text-transform: uppercase;
+}
+p{
+    color: white;
+}
+/*NAVIGATION MENU*/
+.contenedor-header {
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+    padding: 0; /* Elimina el padding del ul */
+    margin: 0; /* Elimina el margin del ul */
+    width: 150%; /* Asegura que el ul ocupe todo el ancho */
+}
+.contenedor-header header nav ul li {
+    flex: 1; /* Hace que cada li ocupe el mismo espacio */
+    margin: 0 10px; /* Espacio entre los cuadrados */
+}
+.contenedor-header header nav ul li a {
+    display: flex; /* Cambia a flex para centrar el texto */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    color: white;
+    padding: 15px; /* Espacio interno */
+    background-color: rgb(0, 8, 119);/*color de fondo azul suave */
+    text-align: center; /* Centra el texto */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    text-decoration: none;
+    border-radius: 5px; /* Esquinas redondeadas para un mejor aspecto */
+    height: 100%; /* Asegura que el enlace ocupe toda la altura del li */
+}
+.contenedor-header header nav ul li a:hover {
+    background-color: blue; /* Color de fondo más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del cuadrado */
+}
+/*#content {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 5px 1px #222;
+    transition: .4s;
+}
+.slider:after {
+    content: 'Es';
+    font-weight: bold;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    transition: .4s;
+}
+input:checked + .slider:after {
+    content: 'En';
+    transform: translateX(-28px);
+}
+input:checked + .slider:before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg');
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+body.es #content p {
+    color: black;
+}*/
+::-webkit-scrollbar {
+    width: 15px; 
+}
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #09008a; 
+    border-radius: 10px; 
+    border: 2px solid #f1f1f1; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0400ff; 
+}

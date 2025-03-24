@@ -1,0 +1,42 @@
+@media screen and (max-width: 576px) {
+    /* Ensure modal images are not cut off */
+    #modal img,
+    #modal-content img,
+    #modal-content:last-child img,
+     img.modal-content:last-child{
+         width:100%;
+         height:auto
+     }
+
+     /* Ensure modal content is scrollable */
+     #modal,
+     #modal-content{
+         overflow-y:auto
+     }
+
+}
+
+/* Diseño responsivo para la barra de navegación */
+@media screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 75px;
+        width: 100px; /* Ajuste del ancho del menú de navegación */
+        flex-direction:column;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 0px 0; /* Ajuste del padding para que sea más pequeño */
+    }
+}

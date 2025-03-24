@@ -1,0 +1,153 @@
+/*SECCION START*/
+.inicio {
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido al inicio (izquierda) */
+    overflow: hidden;
+    background-color: black;
+    flex-direction: row-reverse;
+}
+.cuadrados {
+    position: absolute;
+    border: solid 2px rgb(68, 0, 255); 
+    opacity: 0; /* Comienza invisible */
+    animation: appear 5s infinite; /* Animación de aparición */
+}
+@keyframes appear {
+    0% {
+        transform: translateX(0%); /* Comienza fuera de la pantalla a la izquierda */
+        opacity: 1; /* Comienza visible */
+    }
+    50% {
+        transform: translateX(0%); /* Se mueve a su posición original */
+        opacity: 1; /* Mantiene la visibilidad */
+    }
+    100% {
+        transform: translateX(0%); /* Se mueve fuera de la pantalla a la derecha */
+        opacity: 0; /* Desaparece */
+    }
+}
+.contenido-banner {
+    padding: 20px;
+    max-width: 100%; /* Asegura que el contenedor se ajuste al contenido */
+    text-align: left; /* Asegura que el contenido esté alineado a la izquierda */
+    border-radius: 40px;
+    position: relative; /* Para que el contenido esté por encima de los cuadrados */
+    z-index: 1; /* Asegura que el contenido esté por encima */
+    letter-spacing: 10px;
+}
+.titulos {
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 5s; 
+}
+.contenido-banner h1 {
+    text-transform: uppercase;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    color: rgb(255, 255, 255);
+}
+.contenido-banner h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    color: rgb(17, 0, 255);
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+#AgustinPatat {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0; /* Oculta el texto inicialmente */
+    animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+    font-size: 50px; /* Asegura que el tamaño de fuente sea consistente */
+}
+#AnalistaDeDatos {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0; /* Oculta el texto inicialmente */
+    animation: typing 4s steps(40, end) 3s forwards, blink-caret .75s step-end infinite;
+    font-size: 30px; /* Asegura que el tamaño de fuente sea consistente */
+}
+/* Contact Section Responsive Styles */
+@media screen and (max-width: 768px) {
+    .inicio {
+        padding: 50px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cuadrados {
+        position: absolute;
+        opacity: 0;
+        animation: appear 5s infinite;
+        border: solid 2px rgb(68, 0, 255);
+        transform-origin: center;
+    }
+
+    .contenido-banner {
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 5px;
+        z-index: 2;
+    }
+
+    #AgustinPatat {
+        font-size: 36px;
+    }
+
+    #AnalistaDeDatos {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inicio {
+        padding: 30px 15px;
+    }
+
+    .contenido-banner {
+        letter-spacing: 3px;
+    }
+
+    #AgustinPatat {
+        font-size: 28px;
+    }
+
+    #AnalistaDeDatos {
+        font-size: 20px;
+    }
+
+    .cuadrados {
+        animation: appear 5s infinite;
+        width: 80% !important;
+        height: 80% !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #AgustinPatat {
+        font-size: 24px;
+    }
+
+    #AnalistaDeDatos {
+        font-size: 18px;
+    }
+
+    .contenido-banner {
+        letter-spacing: 2px;
+    }
+
+    .cuadrados {
+        width: 90% !important;
+        height: 90% !important;
+    }
+}

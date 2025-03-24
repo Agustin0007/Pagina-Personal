@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Portafolios" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agustin Patat</title>
+    <link rel="icon" href="../Public/Img/Logo pagina.png" type="image/png">
+
+    <link rel="stylesheet" href="css/Navigation menu.css">
+    <link rel="stylesheet" href="css/Portafolio.css">
+    <link rel="stylesheet" href="css/Resposive.css">
+
+    <script src="Scripts/Script-Navigation menu.js"></script>
+    <script src="Scripts/Script-Modal portafolio.js"></script>
+</head>
+<body>
+    <!--SECCION NAVIGATION MENU -->
+    <section class="contenedor-header">
+    <header>
+        <nav id="nav" class="responsive">
+            <ul>
+                <li><a href="Section Start.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="Section About me.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="Section Skills.html" onclick="seleccionar()">HABILIDADES</a></li>
+                <li><a href="Section Portafolio.html" onclick="seleccionar()">PORTAFOLIO</a></li>
+                <li><a href="Section Contact.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!--<div id="content">
+            <p id="paragraph1"></p>
+            <p id="paragraph2"></p>
+            <label class="switch">
+                <input type="checkbox" id="toggle-btn">
+                <span class="slider round"></span>
+            </label>
+        </div>-->
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </div>
+    </header>
+    </section>
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <summary class="showModal boton-descripcion">
+                        Desplegar descripción
+                        <div class="overlay"></div>
+                    </summary>
+                    <dialog class="modal">
+                        <div class="imagen-container">
+                            <a href="https://6601cdf27cfe6031f2b17b33--scintillating-cucurucho-42440f.netlify.app/" target="_blank">
+                                <img src="Img/HTML Y CSS.jpg" alt="Mi segunda pagina web" class="imagen-proyecto">
+                                <div class="overlay">
+                                    <h3>HTML5 y CSS3</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Este proyecto es una página web avanzada desarrollada con HTML5 y CSS3. Incluye animaciones y transiciones CSS3 para mejorar la experiencia del usuario. Se implementaron técnicas de diseño responsivo y se utilizaron flexbox y grid layout para una disposición flexible y estructurada de los elementos en la página.</p>
+                        <button class="closeModal">Cerrar</button>
+                    </dialog>
+                    
+                    <div class="imagen-container">
+                        <img src="Img/HTML Y CSS.jpg" alt="Mi segunda pagina web" class="imagen-proyecto">
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <summary class="showModal boton-descripcion">
+                        Desplegar descripción
+                        <div class="overlay"></div>
+                    </summary>
+                    <dialog class="modal">
+                        <div class="imagen-container">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9" target="_blank">
+                                <img src="Img/Mi primer dashboard de power bi.jpg" alt="Mi primer dashboard de Power BI" class="imagen-proyecto">
+                                <div class="overlay">
+                                    <h3>Power BI</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>Informe de Análisis en Power BI</h3>
+                        <p><strong>1. Introducción:</strong> Este informe presenta un análisis en Power BI sobre la distribución de empleados en una organización, diferenciando entre activos e inactivos. Se utilizan datos de un archivo Excel y diversas visualizaciones para facilitar la interpretación de la información.</p>
+                        <p><strong>2. Datos Utilizados:</strong> El archivo Excel contiene información clave de los empleados, incluyendo: ID Empleado, Función, Departamento y Región, Educación, Género, Jornada y Modalidad de Trabajo, Fecha de Contratación, Estatus y Fecha de Baja. Estos datos serán procesados en Power BI para extraer insights relevantes.</p>
+                        <p><strong>3. Cálculos Realizados:</strong> Se calcularán tres métricas principales: Total de empleados, Empleados activos, Empleados inactivos.</p>
+                        <p><strong>4. Metodología:</strong> El análisis se realiza mediante medidas implícitas y explícitas en DAX, combinando paneles de filtros para segmentación.</p>
+                        <p><strong>5. Visualizaciones Utilizadas:</strong>
+                            <ul>
+                                <li>Tarjetas para resaltar indicadores clave.</li>
+                                <li>Segmentadores de datos para filtros dinámicos.</li>
+                                <li>Gráficos circulares y de anillo para visualizar proporciones.</li>
+                                <li>Gráfico de rectángulos para jerarquías organizacionales.</li>
+                                <li>Mapas para distribución geográfica del personal.</li>
+                            </ul>
+                        </p>
+                        <button class="closeModal">Cerrar</button>
+                    </dialog>
+                
+                    <div class="imagen-container">
+                        <img src="Img/Mi primer dashboard de power bi.jpg" alt="Mi primer dashboard de Power BI" class="imagen-proyecto">
+                    </div>
+                </div>
+    
+                <div class="proyecto">
+                    <summary class="showModal boton-descripcion">
+                        Desplegar descripción
+                        <div class="overlay"></div>
+                    </summary>
+                    <dialog class="modal">
+                        <div class="imagen-container">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiM2ZiMzFhNjktYjkxMS00OWZlLTg0ZDQtODBkZGM3OTNlMDMwIiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9" target="_blank">
+                                <img src="Img/Mi primer dashboard de power bi.jpg" alt="Mi primer dashboard de Power BI" class="imagen-proyecto">
+                                <div class="overlay">
+                                    <h3>Power BI</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>Informe de Análisis en Power BI</h3>
+                        <p><strong>Descripción del Proyecto:</strong> Este proyecto consiste en un panel interactivo desarrollado en Power BI, diseñado para analizar y visualizar datos de manera eficiente. Se han implementado distintos gráficos y métricas claves para facilitar la toma de decisiones basada en datos.</p>
+                        <p><strong>Herramientas y Tecnologías Utilizadas:</strong> Para su desarrollo se ha utilizado Power BI como principal herramienta de visualización, junto con DAX (Data Analysis Expressions) para cálculos avanzados y Power Query para la transformación de datos.</p>
+                        <button class="closeModal">Cerrar</button>
+                    </dialog>
+                    <div class="imagen-container">
+                        <img src="Img/Mi primer dashboard de power bi.jpg" alt="Mi primer dashboard de Power BI" class="imagen-proyecto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -42,6 +42,9 @@
     overflow: hidden;
     opacity: 0;
 }
+.skills .skill .barra-skill:hover{
+    box-shadow: 0 0 10px white;
+}
 .skills .skill .progreso {
     background-color: blue;
     position: absolute;
@@ -64,7 +67,7 @@
     line-height: 40px;
     text-align: center;
     top: -10px; /* Ajustado para que se vea completo */
-    right: -15px;
+    right: -1px;
     font-size: 14px;
     color: white;
     animation: bounce 1s infinite;

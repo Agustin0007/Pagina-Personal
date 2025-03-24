@@ -28,15 +28,30 @@
     align-items: center; /* Centra verticalmente los elementos */
 }
 .sobremi .imagen-col {
-    padding-right: 20px; /* Espacio entre la imagen y el texto */
+    padding-right: 40px; /* Espacio entre la imagen y el texto */
     width: 450%;
+    margin-left: 30px;
 }
 .sobremi .imagen-perfil {
-    width: 100%; /* Cambia el ancho de la imagen a 100% del contenedor */
+    width: 90%; /* Cambia el ancho de la imagen a 100% del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
-    border: 10px ridge rgb(4, 0, 255);
-    border-radius: 50px;
+    border-radius: 100%;
     display: block;
+    animation: slideUp 1s ease-in-out forwards, glow 3s infinite, pulse 3s infinite;
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+}
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(-50%); }
+}
+@keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
+    50% { filter: drop-shadow(0 0 13px rgb(25, 0, 255)); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 .sobremi h2 {
     font-size: 48px;
@@ -156,7 +171,7 @@
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid rgb(32, 32, 32);
+    border-right: 5px solid rgb(32, 32, 32);
 }
 .curriculum .fila .item{
     padding: 25px;
@@ -183,11 +198,11 @@
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid blue;
+    border-right: 5px solid blue;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid blue;
+    border-left: 5px solid blue;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{

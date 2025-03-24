@@ -15,7 +15,9 @@
     border: solid 2px rgb(68, 0, 255); 
     opacity: 0; /* Comienza invisible */
     animation: appear 5s infinite; /* Animación de aparición */
+    box-shadow: 0 0 1px white;
 }
+
 @keyframes appear {
     0% {
         transform: translateX(0%); /* Comienza fuera de la pantalla a la izquierda */

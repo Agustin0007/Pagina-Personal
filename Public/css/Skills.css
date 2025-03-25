@@ -1,4 +1,7 @@
 /* HABILIDADES */
+p{
+    line-height: 1.8;
+}
 .skills {
     background-color: rgb(0, 0, 0);
     color: white;

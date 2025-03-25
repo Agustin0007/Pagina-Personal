@@ -1,4 +1,7 @@
 /*CONTACTO*/
+p{
+    line-height: 1.8;
+}
 .Contacto {
     height: 100vh;
     background-color: black;

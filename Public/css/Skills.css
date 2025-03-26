@@ -277,6 +277,99 @@ p{
     animation: fadeIn 0.5s 19s forwards, slideInBar 1s 19s forwards;
 }
 
+/* Agregamos media queries para responsividad */
+@media screen and (max-width: 1024px) {
+    .skills {
+        padding: 50px 15px;
+    }
+
+    .skills .contenido-seccion {
+        width: 90%;
+    }
+
+    .skills .fila .col {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills {
+        padding: 50px 0;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .skills .contenido-seccion {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .skills .fila {
+        flex-direction: column;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .skills .skill {
+        margin-bottom: 25px;
+    }
+
+    .skills .skill .barra-skill {
+        width: 100%;
+    }
+
+    /* Ensure proper spacing between sections */
+    .skills .fila .col + .col {
+        margin-top: 30px;
+    }
+
+    /* Adjust heading alignment */
+    .skills .fila .col h3 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .skills {
+        padding: 30px 10px;
+    }
+
+    .skills h2 {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+
+    .skills .fila .col h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .skills .skill > span {
+        font-size: 14px;
+    }
+
+    .skills .skill .barra-skill {
+        height: 15px;
+    }
+
+    .skills .skill .progreso {
+        height: 15px;
+    }
+
+    .skills .skill .barra-skill span {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        top: -8px;
+    }
+}
+
+/* Estilos para el modo oscuro */
+
 [data-theme="light"] .skills {
     background-color: #f8f9fa;
     color: #212529;

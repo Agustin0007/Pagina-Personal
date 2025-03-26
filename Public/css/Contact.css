@@ -361,13 +361,13 @@ footer .redes a:hover {
 }
 
 [data-theme="light"] footer .redes a {
-    background-color: #495057;
-    border: 2px solid #495057;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
     color: #ffffff;
 }
 
 [data-theme="light"] footer .redes a:hover {
-    background-color: #212529;
-    border-color: #212529;
-    box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+    background-color: #67b1fc;
+    border-color: #61b0ff;
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
 }

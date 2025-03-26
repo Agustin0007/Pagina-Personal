@@ -15,8 +15,102 @@ h2{
 p{
     color: white;
 }
-.nav-responsive {
-    opacity: 0;
+@media screen and (max-width: 769px) {
+    .nav-responsive {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        background: rgb(0, 8, 119);
+        cursor: pointer;
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+
+    .nav-responsive:hover {
+        background: blue;
+    }
+
+    .nav-responsive svg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        transition: transform 0.3s;
+    }
+
+    .nav-responsive.active svg {
+        transform: rotate(90deg);
+    }
+
+    #nav {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        width: 180px;
+        z-index: 1999;
+    }
+
+    #nav.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        background: rgb(0, 8, 119);
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    #nav ul li {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    #nav ul li a {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        justify-content: flex-start;
+        transition: all 0.3s ease;
+    }
+
+    #nav ul li a:hover {
+        background: blue;
+        transform: translateX(5px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Light theme adjustments */
+[data-theme="light"] .nav-responsive {
+    background: #726cc0;
+}
+
+[data-theme="light"] .nav-responsive:hover {
+    background: #534e97;
+}
+
+[data-theme="light"] #nav ul li a:hover {
+    background: #212529;
 }
 /*NAVIGATION MENU*/
 .contenedor-header {

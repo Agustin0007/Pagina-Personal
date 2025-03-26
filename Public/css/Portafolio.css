@@ -182,76 +182,73 @@ p{
 @media screen and (max-width: 1024px) {
     .portafolio {
         height: auto;
-        padding: 50px 20px;
+        padding: 50px 0;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .portafolio .contenido-seccion {
+        width: 95%;
+        padding: 0 15px;
     }
 
     .portafolio .galeria {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .portafolio .galeria .proyecto {
-        width: 90%;
-        margin: 15px 0;
-    }
-
-    .portafolio .galeria .proyecto .imagen-container {
-        max-width: 100%;
-        margin: 10px auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .portafolio h2 {
-        font-size: 36px;
-    }
-
-    .portafolio .galeria .proyecto .descripcion h3 {
-        font-size: 20px;
-    }
-
-    .portafolio .galeria .proyecto .descripcion p {
-        font-size: 16px;
-    }
-
-    .modal {
-        width: 90%;
-        height: 90%;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .portafolio h2 {
-        font-size: 28px;
-        padding: 15px 0;
+        align-items: stretch;
+        width: 100%;
     }
 
     .portafolio .galeria .proyecto {
         width: 100%;
+        max-width: none;
+        margin: 20px 0;
     }
 
     .portafolio .galeria .proyecto .imagen-container {
-        max-width: 280px;
+        max-width: none;
+        width: 100%;
+        margin: 20px auto;
     }
 
     .portafolio .galeria .proyecto .imagen-container img {
-        height: 180px;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portafolio {
+        padding: 30px 0;
     }
 
-    .portafolio .boton-descripcion {
-        font-size: 16px;
-        padding: 8px 18px;
+    .portafolio .contenido-seccion {
+        width: 100%;
+        padding: 0 15px;
     }
 
-    .modal {
-        width: 95%;
-        padding: 10px;
+    .portafolio .galeria .proyecto .imagen-container img {
+        height: 250px;
     }
 
-    .closeModal {
-        padding: 8px 16px;
-        font-size: 14px;
+    .portafolio .galeria .proyecto .descripcion {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portafolio {
+        padding: 20px 0;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .portafolio .galeria .proyecto .imagen-container img {
+        height: 200px;
     }
 }
 

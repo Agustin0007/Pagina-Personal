@@ -104,5 +104,111 @@
                 "link": "https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9"
             }
         ]
+    },
+    "en": {
+        "header": {
+            "home": "Home",
+            "about-me": "About me",
+            "skills": "Skills",
+            "curriculum": "Resume",
+            "portfolio": "Portfolio"
+        },
+        "home": {
+            "name": "Agustin Patat",
+            "role": "Data Analyst",
+            "email": "agustinpatat5@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/agustin-patat"
+        },
+        "about-me": {
+            "title": "About me",
+            "description": "My name is Agustín Patat, I am a Information Systems Engineering student, and I am excited about the opportunity to join a work team where I can contribute with my skills and continue developing professionally. I am a responsible, punctual person with great learning ability. I quickly adapt to work environments and enjoy working in teams, contributing innovative ideas and making decisions that drive the growth of the projects I participate in. I have knowledge and skills in data analysis and FrontEnd development. Additionally, I am characterized by my creativity in problem-solving and my analytical and methodical approach. I am convinced that my technical skills and positive attitude can generate a positive impact on your organization."
+        },
+        "personal-data": {
+            "birthday": "02-16-2004",
+            "phone": "3564 360908",
+            "email": "agustinpatat5@gmail.com",
+            "address": "San Francisco, Córdoba, Argentina",
+            "position": "Data Analyst - Student"
+        },
+        "skills": {
+            "technical": {
+                "SQL": "65%",
+                "Python": "40%",
+                "Power BI": "70%",
+                "C": "80%",
+                "Microsoft Excel": "30%",
+                "Microsoft Word": "40%",
+                "HTML5": "40%",
+                "CSS3": "40%"
+            },
+            "professional": {
+                "Communication": "80%",
+                "Responsibility": "100%",
+                "Problem solving": "80%",
+                "Organization": "100%",
+                "Adaptability": "90%",
+                "Teamwork": "90%",
+                "Decision making": "95%",
+                "Creativity": "85%",
+                "Dedication": "100%"
+            }
+        },
+        "curriculum": {
+            "education": [
+                {
+                    "title": "Electrical Technician",
+                    "institution": "IPET N°50 Ing. F. Olmos, San Francisco",
+                    "year": "2016 - 2022",
+                    "description": "Overall grade point average: 8.35. High School studies completed."
+                },
+                {
+                    "title": "Information Systems Engineering",
+                    "institution": "UTN, San Francisco",
+                    "year": "2023 - Present",
+                    "description": "In 2025, I'm starting my third year in the program with 16 subjects approved."
+                }
+            ],
+            "experience": [
+                {
+                    "title": "Preventive and Predictive Maintenance Technician",
+                    "company": "Akron S.A",
+                    "year": "September 2022 - December 2022",
+                    "tasks": [
+                        "Preventive and corrective maintenance of facilities, electrical and mechanical equipment",
+                        "Support for equipment and machinery installation and assembly."
+                    ]
+                },
+                {
+                    "title": "Electrician",
+                    "company": "IPET N°50 EFO",
+                    "year": "March 2016 - December 2022",
+                    "tasks": [
+                        "Inspection of electrical systems, equipment, and components to detect risks and propose improvements.",
+                        "Verification of system compatibility and safety.",
+                        "Technical interpretation for proper installation of electrical systems and equipment and connections.",
+                        "Study of circuit diagrams to establish optimal wiring distribution.",
+                        "Reading and following technical plans and manuals.",
+                        "Management of computer and technological systems."
+                    ]
+                }
+            ]
+        },
+        "portfolio": [
+            {
+                "title": "HTML5 and CSS3",
+                "description": "This project is an advanced website developed with HTML5 and CSS3. It includes CSS3 animations and transitions to enhance user experience. Responsive design techniques were implemented, and flexbox and grid layout were used for flexible and structured element layout on the page.",
+                "link": "https://6601cdf27cfe6031f2b17b33--scintillating-cucurucho-42440f.netlify.app/"
+            },
+            {
+                "title": "HTML5 and CSS3 - Team Page",
+                "description": "This project is a team website created with HTML5 and CSS3. The page includes an 'About Us' section that presents team members with photos and descriptions. Responsive design techniques were used to ensure the page looks good on mobile and desktop devices, and CSS3 styles were applied for a clean and professional design.",
+                "link": "https://678688e7f96504816ee40e22--chic-puppy-e9e051.netlify.app/nosotros"
+            },
+            {
+                "title": "Power BI Analysis",
+                "description": "This report presents a Power BI analysis of employee distribution in an organization, differentiating between active and inactive employees. Data from an Excel file and various visualizations are used to facilitate information interpretation. Key metrics such as total employees, active and inactive employees are calculated, and DAX measures are used with interactive filters and geographic distribution maps.",
+                "link": "https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9"
+            }
+        ]
     }
 }

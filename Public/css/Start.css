@@ -15,7 +15,6 @@
     border: solid 2px rgb(68, 0, 255); 
     opacity: 0; /* Comienza invisible */
     animation: appear 5s infinite; /* Animación de aparición */
-    box-shadow: 0 0 1px white;
 }
 
 @keyframes appear {
@@ -152,4 +151,19 @@
         width: 90% !important;
         height: 90% !important;
     }
+}
+[data-theme="light"] .inicio {
+    background-color: #f8f9fa;
+}
+
+[data-theme="light"] .cuadrados {
+    border: solid 2px #424242;
+}
+
+[data-theme="light"] .contenido-banner h1 {
+    color: #212529;
+}
+
+[data-theme="light"] .contenido-banner h2 {
+    color: #495057;
 }

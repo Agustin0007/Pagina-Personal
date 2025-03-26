@@ -1,6 +1,7 @@
 /*ABOUT ME*/
 p{
     line-height: 1.8;
+    color: white;
 }
 .sobremi {
     background-color: rgb(0,0,0);
@@ -49,7 +50,7 @@ p{
 }
 @keyframes glow {
     0%, 100% { filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
-    50% { filter: drop-shadow(0 0 13px rgb(25, 0, 255)); }
+    50% { filter: drop-shadow(0 0 15px rgb(25, 0, 255)); }
 }
 @keyframes pulse {
     0% { transform: scale(1); }
@@ -345,4 +346,109 @@ p{
     .curriculum .fila .item .casa {
         font-size: 18px;
     }
+}
+[data-theme="light"] p{
+    color: black;
+}
+
+[data-theme="light"] .sobremi {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+[data-theme="light"] .sobremi .contenido-seccion {
+    background-color: #ffffff;
+    border: 3px solid #adb5bd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .sobremi .contenido-seccion:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0);
+}
+
+[data-theme="light"] .sobremi .fila .col ul li strong {
+    color: #212529;
+}
+
+[data-theme="light"] .sobremi .fila .col ul li span {
+    background-color: #495057;
+    color: #ffffff;
+}
+[data-theme="light"] .sobremi .imagen-perfil {
+    animation: slideUp 1s ease-in-out forwards, glow 3s infinite, pulse 3s infinite;
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+}
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(-50%); }
+}
+@keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
+    50% { filter: drop-shadow(0 0 15px rgb(0, 0, 0)); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+[data-theme="light"] .sobremi button {
+    border: 2px solid #495057;
+    color: #000000;
+}
+
+[data-theme="light"] .sobremi button:hover {
+    color: #ffffff;
+}
+
+[data-theme="light"] .sobremi button a {
+    color: #000000;
+}
+[data-theme="light"] .sobremi button .overlay {
+    background-color: #495057;
+}
+[data-theme="light"] .sobremi button:hover a {
+    color: #ffffff;
+}
+[data-theme="light"] .curriculum {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+[data-theme="light"] .curriculum .contenido-seccion {
+    border: 3px solid #adb5bd;
+}
+
+[data-theme="light"] .curriculum .contenido-seccion:hover {
+    box-shadow: 0 0 20px #000000;
+}
+
+[data-theme="light"] .curriculum .fila .izquierda {
+    border-right: 5px solid #dee2e6;
+}
+
+[data-theme="light"] .curriculum .fila .item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+[data-theme="light"] .curriculum .fila .item .casa,
+[data-theme="light"] .curriculum .fila .item .fecha {
+    color: #212529;
+}
+
+[data-theme="light"] .curriculum .fila .izq,
+[data-theme="light"] .curriculum .fila .der {
+    border-color: #adb5bd;
+}
+
+[data-theme="light"] .curriculum .fila .item .conectori,
+[data-theme="light"] .curriculum .fila .item .conectord {
+    background-color: #adb5bd;
+}
+
+[data-theme="light"] .curriculum .fila .item .conectori .circuloi,
+[data-theme="light"] .curriculum .fila .item .conectord .circulod {
+    background-color: #adb5bd;
 }

@@ -276,3 +276,29 @@ p{
 .skills .skill:nth-child(20) .barra-skill {
     animation: fadeIn 0.5s 19s forwards, slideInBar 1s 19s forwards;
 }
+
+[data-theme="light"] .skills {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+[data-theme="light"] p {
+    color: #212529;
+}
+
+[data-theme="light"] .skills .skill .barra-skill {
+    background-color: #dee2e6;
+}
+
+[data-theme="light"] .skills .skill .barra-skill:hover {
+    box-shadow: 0 0 10px #495057;
+}
+
+[data-theme="light"] .skills .skill .progreso {
+    background-color: #495057;
+}
+
+[data-theme="light"] .skills .skill .barra-skill span {
+    background-color: #495057;
+    color: #ffffff;
+}

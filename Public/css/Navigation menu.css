@@ -15,6 +15,9 @@ h2{
 p{
     color: white;
 }
+.nav-responsive {
+    opacity: 0;
+}
 /*NAVIGATION MENU*/
 .contenedor-header {
     background: black;
@@ -31,13 +34,17 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    width: 100%; /* Añadido para asegurar el ancho completo */
+}
+.contenedor-header header nav {
+    width: 100%; /* Añadido para asegurar que la navegación ocupe todo el espacio disponible */
 }
 .contenedor-header header ul {
     display: flex;
     list-style: none;
-    padding: 0; /* Elimina el padding del ul */
-    margin: 0; /* Elimina el margin del ul */
-    width: 150%; /* Asegura que el ul ocupe todo el ancho */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Cambiado de 150% a 100% */
 }
 .contenedor-header header nav ul li {
     flex: 1; /* Hace que cada li ocupe el mismo espacio */
@@ -138,4 +145,31 @@ body.es #content p {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #0400ff; 
+}
+[data-theme="light"] .contenedor-header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .contenedor-header header nav ul li a {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+[data-theme="light"] .contenedor-header header nav ul li a:hover {
+    background-color: #212529;
+    transform: scale(1.05);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background-color: #adb5bd;
+    border: 2px solid #dee2e6;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background-color: #495057;
 }

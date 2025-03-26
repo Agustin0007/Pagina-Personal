@@ -110,7 +110,7 @@ p{
     right: -50%;
     top: 0%;
     transform: translateY(-50%);
-    width: 70%; 
+    width: 50%; 
     animation: slideUp 1s ease-in-out forwards, glow 3s infinite, pulse 3s infinite;
     filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
 }
@@ -307,4 +307,67 @@ footer .redes a:hover {
         padding: 10px 25px;
         min-width: 100px;
     }
+}
+[data-theme="light"] .Contacto {
+    background-color: #f8f9fa;
+}
+
+[data-theme="light"] .contenido-seccion {
+    color: #212529;
+}
+
+[data-theme="light"] .formulario {
+    box-shadow: 0 0 20px rgba(73, 80, 87, 0.3);
+    background-color: #ffffff;
+}
+
+[data-theme="light"] .formulario .center-texto {
+    color: #212529;
+}
+
+@keyframes textFade {
+    0% { color: #212529; }
+    50% { color: #495057; }
+    100% { color: #212529; }
+}
+
+[data-theme="light"] .campo_label {
+    color: #212529;
+}
+
+[data-theme="light"] .campo_field {
+    border: 2px solid #dee2e6;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+[data-theme="light"] .campo_field:focus {
+    border-color: #495057;
+}
+
+[data-theme="light"] .boton_primario {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+[data-theme="light"] .boton_primario:hover {
+    background-color: #212529;
+    box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+}
+
+[data-theme="light"] footer {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+[data-theme="light"] footer .redes a {
+    background-color: #495057;
+    border: 2px solid #495057;
+    color: #ffffff;
+}
+
+[data-theme="light"] footer .redes a:hover {
+    background-color: #212529;
+    border-color: #212529;
+    box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
 }

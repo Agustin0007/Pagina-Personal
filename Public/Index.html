@@ -16,7 +16,6 @@
     <script src="Scripts/Script-Start transitions.js"></script>
     <script src="Scripts/theme.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    
 </head>
 <body>
@@ -32,10 +31,14 @@
                     <li><a href="Section Portafolio.html" onclick="seleccionar()">PORTAFOLIO</a></li>
                     <li><a href="Section Contact.html" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
+                
             </nav>
-                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"></div>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon theme-toggle-icon"></i>
+                    <i class="fas fa-sun theme-toggle-icon"></i>
+                </button>
+
         </header>
     </section>
     <!--SECCION START -->

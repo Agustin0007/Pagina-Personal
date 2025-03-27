@@ -25,7 +25,7 @@ p{
     to { transform: translateX(0%); } /* Ajusta la posición final */
 }
 .contenido-seccion:hover {
-    box-shadow: 0 10px 25px rgba(4, 0, 255, 0.5);
+    box-shadow: 0 10px 25px rgba(4, 0, 255);
 }
 .sobremi .fila {
     display: flex; /* Utiliza flexbox para alinear los elementos en fila */

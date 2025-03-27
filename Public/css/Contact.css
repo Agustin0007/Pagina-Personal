@@ -3,40 +3,41 @@ p{
     line-height: 1.8;
 }
 .Contacto {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    animation: backgroundShift 10s infinite;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .contenido-seccion {
-    height: auto;
-    background-size: cover;
-    color: white;
-    width: 60%;
-    animation: slideIn 1s ease-in-out forwards;
-    position: relative;
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(-25%); }
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
 }
 
 .formulario {
-    width: 70%;
-    padding: 4%;
-    box-shadow: 0 0px 20px rgba(255, 255, 255);
-    transition: box-shadow 0.3s ease;
-    animation: fadeIn 2s ease-in-out;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    margin-bottom: 40px;
+    animation: formAppear 1s ease-out;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.formulario:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    transform: translateY(-5px);
 }
 
 .formulario .center-texto {
@@ -46,37 +47,35 @@ p{
     padding-bottom: 20px;
     color: #ffffff;
     font-weight: bold;
-    animation: textFade 3s infinite;
-}
-
-@keyframes textFade {
-    0% { color: #ffffff; }
-    50% { color: #a4e5ff; }
-    100% { color: #ffffff; }
+    letter-spacing: 2px;
 }
 
 .campo {
     display: flex;
     margin-bottom: 20px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .campo_field {
     flex: 1;
     border: 2px solid #535353;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
     color: #000000;
-    transition: border-color 0.3s ease;
-}
-
-.campo_field--textarea {
-    height: 100px;
+    transition: all 0.3s ease;
+    font-size: 16px;
 }
 
 .campo_field:focus {
     border-color: #0400ff;
+    box-shadow: 0 0 15px rgba(4, 0, 255, 0.3);
+    transform: scale(1.01);
+}
+
+.campo_field--textarea {
+    height: 120px;
+    resize: vertical;
 }
 
 .campo_label {
@@ -84,251 +83,102 @@ p{
     text-align: left;
     color: #ffffff;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton_primario {
-    background-color: #07006e;
+    background: linear-gradient(45deg, #07006e, #0400ff);
     color: white;
-    font-size: 15px;
-    margin-left: 110px;
-    padding: 10px 25px;
+    font-size: 16px;
+    padding: 12px 35px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .boton_primario:hover {
-    background-color: #0400ff;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    filter: brightness(1.5);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(4, 0, 255, 0.5);
 }
 
-.mapa-sudamerica {
-    position: absolute;
-    right: -50%;
-    top: 0%;
-    transform: translateY(-50%);
-    width: 50%; 
-    animation: slideUp 1s ease-in-out forwards, glow 3s infinite, pulse 3s infinite;
-    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+.boton_primario:active {
+    transform: scale(0.95);
 }
-@keyframes slideUp {
-    from { transform: translateY(100%); }
-    to { transform: translateY(-50%); }
-}
-@keyframes glow {
-    0%, 100% { filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
-    50% { filter: drop-shadow(0 0 10px rgb(0, 217, 255)); }
-}
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-/*FOOTER*/
+
 footer {
-    background-color: rgb(0,0,0);
+    background-color: #000000;
     color: #fff;
-    padding: 50px 0 30px 0;
+    padding: 30px 0;
     text-align: center;
-    position: relative;
     width: 100%;
 }
+
 footer .redes {
-    margin-bottom: 20px;
-    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
-    justify-content: left; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espaciado entre los íconos */
-    padding-left: 300px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
 }
+
 footer .redes a {
     color: #fff;
-    display: flex; /* Flex para centrar los iconos */
+    display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #ffffff; /* Fondo oscuro para los círculos */
-    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
-    border-radius: 50%; /* Hace que el contenedor sea circular */
-    width: 60px; /* Tamaño del círculo */
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 60px;
     height: 60px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
 footer .redes a svg {
-    width: 80%; /* Ocupa el 80% del círculo */
-    height: 80%; /* Ocupa el 80% del círculo */
+    width: 80%;
+    height: 80%;
 }
+
 footer .redes a:hover {
-    transform: scale(1.1); /* Efecto de agrandar el círculo al pasar el ratón */
-    background-color: rgb(255, 255, 255); /* Cambia el fondo al pasar el ratón */
-    color: #fff;
-    border-color: rgb(255, 255, 255);
+    transform: scale(1.1);
     box-shadow: 0 0 10px rgb(248, 248, 248);
 }
-/* Responsive styles for Contact section */
-@media screen and (max-width: 1024px) {
-    .contenido-seccion {
-        width: 80%;
-    }
 
-    .formulario {
-        width: 80%;
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-
-    .mapa-sudamerica {
-        right: -35%;
-        width: 50%;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media screen and (max-width: 768px) {
-    .Contacto {
-        padding-top: 50px;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .contenido-seccion {
-        width: 90%;
-        animation: none;
-        transform: translateX(0);
-    }
-
-    .formulario {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .campo {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .campo_label {
-        flex: none;
-        margin-bottom: 5px;
-    }
-
-    .boton_primario {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .mapa-sudamerica {
-        position: static;
-        width: 100%;
-        transform: none;
-        margin-top: 20px;
-        animation: none;
-    }
-
-    .formulario .center-texto {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .Contacto {
-        padding: 30px 15px;
-    }
-
-    .formulario {
-        padding: 15px;
-    }
-
-    .campo_field {
-        padding: 8px;
-    }
-
-    .campo_field--textarea {
-        height: 80px;
-    }
-
-    .formulario .center-texto {
-        font-size: 24px;
-        padding-bottom: 15px;
-    }
-
-    footer .redes {
-        padding-left: 0;
-        justify-content: center;
-    }
-
-    footer .redes a {
-        width: 45px;
-        height: 45px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .formulario .center-texto {
-        font-size: 20px;
-    }
-
-    .campo_field {
-        font-size: 14px;
-    }
-
-    .boton_primario {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-}
-@media screen and (max-width: 768px) {
-    /* ... other styles ... */
-
-    .boton_primario {
-        margin-left: 0;
-        width: auto;
-        min-width: 120px;
-        max-width: 200px;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* ... other styles ... */
-
-    .boton_primario {
-        font-size: 15px;
-        padding: 10px 25px;
-        min-width: 100px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    /* ... other styles ... */
-
-    .boton_primario {
-        font-size: 15px;
-        padding: 10px 25px;
-        min-width: 100px;
-    }
-}
+/* Light Theme */
 [data-theme="light"] .Contacto {
     background-color: #f8f9fa;
 }
 
-[data-theme="light"] .contenido-seccion {
-    color: #212529;
+[data-theme="light"] .formulario {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="light"] .formulario {
-    box-shadow: 0 0 20px rgba(73, 80, 87, 0.3);
-    background-color: #ffffff;
+[data-theme="light"] .formulario:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="light"] .formulario .center-texto {
     color: #212529;
-}
-
-@keyframes textFade {
-    0% { color: #212529; }
-    50% { color: #495057; }
-    100% { color: #212529; }
 }
 
 [data-theme="light"] .campo_label {
@@ -343,26 +193,25 @@ footer .redes a:hover {
 
 [data-theme="light"] .campo_field:focus {
     border-color: #495057;
+    box-shadow: 0 0 15px rgba(73, 80, 87, 0.2);
 }
 
 [data-theme="light"] .boton_primario {
-    background-color: #495057;
-    color: #ffffff;
+    background: linear-gradient(45deg, #495057, #212529);
 }
 
 [data-theme="light"] .boton_primario:hover {
-    background-color: #212529;
-    box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+    box-shadow: 0 0 15px rgba(33, 37, 41, 0.3);
 }
 
 [data-theme="light"] footer {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #212529;
 }
 
 [data-theme="light"] footer .redes a {
     background-color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     color: #ffffff;
 }
 
@@ -370,4 +219,64 @@ footer .redes a:hover {
     background-color: #67b1fc;
     border-color: #61b0ff;
     box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .contenido-seccion {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenido-seccion {
+        width: 90%;
+    }
+
+    .formulario {
+        padding: 25px;
+    }
+
+    .formulario .center-texto {
+        font-size: 32px;
+    }
+
+    .campo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .campo_label {
+        flex: none;
+        width: 100%;
+    }
+
+    .boton_primario {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenido-seccion {
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .formulario .center-texto {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    footer .redes {
+        gap: 15px;
+    }
+
+    footer .redes a {
+        width: 45px;
+        height: 45px;
+    }
 }

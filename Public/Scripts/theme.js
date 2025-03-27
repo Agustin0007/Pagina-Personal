@@ -1,18 +1,16 @@
-// Check for saved theme preference or default to 'dark'
 function getInitialTheme() {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme || 'dark';
 }
 
-// Apply theme to document
 function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     document.body.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     
-    // Update icon
-    const icon = document.querySelector('#themeToggle i');
-    if (icon) {
+    // Update all theme toggle icons in the document
+    const icons = document.querySelectorAll('.theme-toggle-icon');
+    icons.forEach(icon => {
         if (theme === 'light') {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
@@ -20,25 +18,36 @@ function applyTheme(theme) {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
         }
-    }
+    });
 }
 
-// Initialize theme
-document.addEventListener('DOMContentLoaded', () => {
-    // Apply saved theme on page load
+// Initialize theme and set up event listeners
+function initializeTheme() {
     const currentTheme = getInitialTheme();
     applyTheme(currentTheme);
     
-    // Theme toggle button event listener
-    const themeToggle = document.getElementById('themeToggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
+    // Set up theme toggle listeners
+    const themeToggles = document.querySelectorAll('#themeToggle');
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             applyTheme(newTheme);
         });
+    });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', initializeTheme);
+
+// Apply theme immediately
+applyTheme(getInitialTheme());
+
+// Add event listener for navigation changes
+document.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        setTimeout(() => {
+            applyTheme(getInitialTheme());
+        }, 100);
     }
 });
-
-// Apply theme immediately to prevent flash of wrong theme
-applyTheme(getInitialTheme());
